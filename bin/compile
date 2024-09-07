@@ -15,7 +15,7 @@ JANET_ARCHIVE_NAME=janet-v$JANET_VERSION-linux
 JANET_URL=https://github.com/janet-lang/janet/releases/download/v$JANET_VERSION/$JANET_ARCHIVE_NAME.tar.gz
 
 # Need to upgrade curl if we want to make use of jurl
-CURL_VERSION=8.9.1
+CURL_VERSION=7.78.0
 DOWNLOAD_URL="https://curl.haxx.se/download/curl-$CURL_VERSION.tar.xz"
 curl -sL "$DOWNLOAD_URL" > curl_$CURL_VERSION.tar.xz
 tar -xf curl_$CURL_VERSION.tar.xz

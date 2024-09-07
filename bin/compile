@@ -21,7 +21,7 @@ curl -sL "$DOWNLOAD_URL" > curl_$CURL_VERSION.tar.xz
 tar -xf curl_$CURL_VERSION.tar.xz
 pushd curl-$CURL_VERSION
 ./configure --prefix=$BUILD_DIR/vendor --with-ssl
-./configure --enable-versioned-symbols
+./configure --enable-versioned-symbols --without-ssl
 make
 make install
 popd
